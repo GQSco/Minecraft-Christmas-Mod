@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "gabes-christmas-mod",
+	"version": "${version}",
+	"name": "Gabe's Christmas Mod",
+	"description": "It's Christamdas time.",
+	"authors": [
+		"Gabriel Christmas"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/gabes-christmas-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.GabesChristmasMod"
+		],
+		"client": [
+			"name.modid.GabesChristmasModClient"
+		],
+		"fabric-datagen": [
+			"name.modid.GabesChristmasModDataGenerator"
+		]
+	},
+	"mixins": [
+		"gabes-christmas-mod.mixins.json",
+		{
+			"config": "gabes-christmas-mod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
