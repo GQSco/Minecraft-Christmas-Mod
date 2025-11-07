@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "gabes-christmas-mod:item/gingerbread_man"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        "gabes-christmas-mod:gingerbread_man"
+    ],
+    "result": {
+        "id": "minecraft:cookie"
+    }
+}
